@@ -1,0 +1,13 @@
+.386
+.model flat,stdcall
+.stack 4096
+ExitProcess PROTO, dwExitCode:DWORD
+
+.DATA
+First byte "Afshin"
+Second SBYTE -55, 66, -10, 0, 7
+.code
+main ENDP
+    Mov ebx, Second[2]
+   
+END main
